@@ -1,0 +1,22 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Proyecto alura ",
+  "main": "main.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jera26/AluraGeek.git"
+  },
+  "author": "Jeraldin Caliz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jera26/AluraGeek/issues"
+  },
+  "homepage": "https://github.com/Jera26/AluraGeek#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

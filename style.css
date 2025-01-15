@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #000;
+}
+main{
+    
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100% - 112px);
+	padding: 1.5rem 4rem;
+
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: #6A0DAD; /* Púrpura */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: "Pixelify Sans", serif;
+    
+}
+
+.img_logo {
+    height: 30px;
+    
+}
+.section{
+    width: 758px;
+    height: 1115px;
+    padding: 40px;
+    align-items: center;
+    
+}
+.titulo{
+  text-align: left;
+  margin-left: 250px;
+  font-family: "Pixelify Sans", serif;
+  font-size: 24px;
+}
+.card{
+    width: 678px;
+    height: 971px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  padding: 15px;
+  filter: drop-shadow(-12px 10px 5.8px rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   overflow: auto;
+  
+ 
+  
+  
+}
+
+
+
+
+
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Pixelify Sans", serif;
+}
+
+.item-image {
+  height: 174px;
+  width: 174px;
+  border: 2px solid #000000;
+}
+
+
+  
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+/* Estilos ajustados */
+.item-details {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos uniformemente */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin: 10px 0 0 0; /* Ajusta el margen superior */
+  gap: 10px; /* Espaciado entre elementos */
+  flex-direction: row;
+  gap: 5px;
+}
+
+
+
+.item-details > button {
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  padding: 0; /* Sin padding */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  
+}
+
+.item-details > button i {
+  font-size: 16px; /* Tamaño del ícono */
+  color: #000; /* Color del ícono */
+}
+
+.item-details > button:hover i {
+  color: #FF0000; /* Cambia el color del ícono al pasar el ratón */
+}
+
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+  width: 196px;
+  background-color: #5D04D9;
+  min-height: 300px; /* Usa min-height en lugar de height */
+  display: flex; /* Flexbox para alinear contenido */
+  flex-direction: column;
+  
+  
+  
+  
+
+}
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.form-section {
+  position: absolute; 
+  top: 170px;
+  right: 30px; /* Pegado al borde derecho */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Ajusta el ancho según tu diseño */
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: none;
+  
+}
+
+/* Título del formulario */
+.form-section h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Pixelify Sans", serif;
+  
+
+}
+
+/* Estilo de los inputs */
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #03318C;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  
+  
+}
+
+/* Mensaje de error */
+.mensaje-error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Botones */
+.buttons {
+  display: flex; /* Para centrar los botones */
+  justify-content: center;
+  gap: 10px; /* Espaciado entre botones */
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 188px;
+
+}
+
+/* Botón enviar */
+.submit {
+  background-color: #03318C;
+  color: white;
+}
+
+/* Botón limpiar */
+.clear {
+  background-color: #fff;
+  color:#03318C;
+  border:2px solid #03318C;
+   
+}
+
+/* Efectos hover */
+button:hover {
+  opacity: 0.9;
+}/* Footer */
+.footer {
+    background-color: #6A0DAD;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Pixelify Sans", serif;
+}
+
+.footer h2, .footer p {
+    font-size: 14px;
+    font-family: "Pixelify Sans", serif;
+}
+
+
+
+/* General para móviles (ancho máximo 768px) */
+@media (max-width: 834px) {
+  body {
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+   
+    padding: 10px; /* Ajustar el espacio alrededor del contenido */
+  }
+
+  .header {
+    flex-direction: column; /* Coloca los elementos en columna */
+    text-align: center; /* Centra el contenido */
+    width: 100%;
+    
+  }
+
+  .header h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .img_logo {
+    height: 25px; /* Ajustar tamaño del logo */
+  }
+
+  
+
+  .section {
+    width: 100%; /* Usar el 100% del ancho del contenedor */
+    height: auto; /* Ajustar altura automáticamente */
+    padding: 20px; /* Reducir padding */
+    
+    
+  }
+   .titulo{
+    font-size: 18px;
+    margin-left: 60px;
+    
+   }
+  .card {
+    width: 100%; 
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 10px; /* Reducir padding */
+    box-shadow: none; /* Opcional: quitar sombras para un diseño más limpio */
+  
+  }
+   
+  .item {
+    width: 100%; /* Tarjetas a ancho completo */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+  }
+
+  .item-image {
+    height: auto; /* Ajustar imagen proporcionalmente */
+    width: 100%; /* Imagen al 100% del ancho */
+  }
+
+  .form-section {
+    position: static; /* Posicionarlo como parte del flujo del documento */
+    width: 100%; /* Usar todo el ancho disponible */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 10px; /* Reducir el espacio interno */
+  
+  }
+
+  .buttons {
+    flex-direction: column; 
+    gap: 10px; /* Espaciado entre botones */
+  }
+
+  button {
+    width: 100%; 
+  }
+}
+
+/* Más pequeño (ancho máximo 480px) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .form-section {
+    padding: 5px; /* Ajustar padding para pantallas más pequeñas */
+    
+  }
+  .form-section h1{
+    padding-top: 80px;
+    font-size: 18px;
+  }
+  .card{
+    overflow: none;
+    height:330px;
+  }
+
+
+  .item-title {
+    font-size: 14px; /* Reducir tamaño de texto */
+  }
+  .items{
+    justify-content: center;
+    
+  }
+
+  .item-price {
+    font-size: 12px;
+    
+  }
+
+  .item-details > button i {
+    font-size: 14px; /* Reducir tamaño del ícono */
+    
+  }
+}

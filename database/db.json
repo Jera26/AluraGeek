@@ -1,0 +1,35 @@
+{
+    "products":[
+    {
+      "id": 1,
+      "nombre": "Laptop Dell Inspiron 15",
+      "imagen": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/silver-metal/notebook-inspiron-15-3530-nt-metal-silver-gallery-12.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=685&qlt=100,1&resMode=sharp2&size=685,402&chrss=full",
+      "precio": 3500000
+    },
+    {
+      "id": 2,
+      "nombre": "Smartphone Samsung Galaxy S23",
+      "imagen": "https://images.samsung.com/co/smartphones/galaxy-s23/images/galaxy-s23-highlights-color-back-lavender.jpg",
+      "precio": 4500000
+    },
+    {
+      "id": 3,
+      "nombre": "Auriculares Sony WH-1000XM5",
+      "imagen": "data:image/webp;base64,UklGRiQDAABXRUJQVlA4IBgDAADQEQCdASo7AFoAPkEOkEgikVFN+CgEBLOAZZjd2O/AiVd/fY93aNWBxb2KnnjikZMy0qpFYZ65JmyvCV3eNtIEN0FPayr0ueCX0R5He++Nzjhm29/Wo99Wn/9iBlRVfquDxshCtdKbxme9h1LQmD+91okNv9LN4hcc/+Sne+C3IecQyEDRrsSZQzlmaDYDvrr5yhbEbIYAAP7/PVzARfo7jOERPrquZ5WQb6taBsh43PG4KnQ7bqraAdo6TDeVT/lHJxC4ElQf6CPeqBkt93DPgWlaSFPBOUe7LmofqEXwKbcDnmW4GBstWlD3KuywkOYAsMd6Dbh0XBYYKDoIaebDbsCuwC6pWKFXESgONAlzVcHENlaG5ZtQWP+VEy8Drg3XyJydeSK7c0YgWhkL201pXb3E+TKq9/kt7q7EgQXadAJYge1NNn1xvZo90iDUKrqFA9D7nqQ88XPTjnPcomWPsriEBwR9ct6aHbQDxRqHbD8cB0zGbdkanKPsPtk1JsCy6sA7W5Ac1b9yPmVrRciu0lEN06u3J3szdSDhCbtk4UrQiGgU8YR/FOVkuXHwWhpPcI8+brexQnwYCLmr4re4/Jgpgesrx5nlLWEtkHoIu63WCbP9vS2o8nLpt5N12ZI4GXccFPJ3uubXg1WNgKWSO+T7QIICVYdIvY9Gvn/wDK0qauWkBg0X4W+xVU8WV7YWCOWc0fFlafiAzMtE0Gp64btEOuZ974df+e6SxE+HHAUgO/FssoRO6Cevef2DplUXoiwTB8HQDsP9QuIx863yXx08QZZ8eNKyUk9ad9opu9H0dkT9f2TfDor1s5D7xc00C8Z1PDLhqBB+aO6ydNoM0392r68/OOWIr9PORejx2NgCelhFrXNOO8wuqK7x6iDQKjYp4FaLO7luX5mx+2fTzlFZP594zUbLWvdR+/V9JdCTGi1RiNcMIfJV/k2KT3X69x5WBfxRdS4FHa/vjJQvorMGrbxIVpQMORy3uDWPJ3wZkpdoXLgHECE99+z2BfTpRf+MgUOvL/2jMHCBVB7+K+0dddzgQAA=",
+      "precio": 1200000
+    },
+    {
+      "id": 4,
+      "nombre": "Smartwatch Apple Watch Series 9",
+      "imagen": "https://mac-center.com/cdn/shop/files/IMG-10934692_550x.jpg?v=1723750039",
+      "precio": 1800000
+    },
+    {
+      "id": 5,
+      "nombre": "Tablet iPad Air (5ta generación)",
+      "imagen": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111887_sp866-ipad-air-5gen.png",
+      "precio": 2500000
+    }
+   
+  ]
+}

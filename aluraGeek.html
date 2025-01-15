@@ -3,20 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>AluraGeek</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
 </head>
 <body>
-    <header>
     
+    <header class="header">
+        <h1 class="titulo">AluraGeek</h1>
+        <img src="./assets/image 1.png  " alt="AluraGeek" class="img_logo">
     </header>
-    <main>
-<section>
-    
-</section>
-    </main>
-    <footer>
 
+    <!-- Contenido principal -->
+    <main>
+
+
+        <section >
+            <!-- Product Card -->
+            <h1  class="titulo">Mis Productos</h1>
+           
+          
+<div class="card" class="section">
+    <div class="items" data-product>
+      <!--   
+            <div class="item shadow">
+                <h3 class="item-title"  ></h3>
+                <img class="item-image" src=""  alt="Producto 1">
+                <div class="item-details">
+                    <h4 class="item-price" ></h4>
+                    <button class="delete-button" data-id>
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>-->
+
+    </div>
+</div>
+
+          
+          
+          </section>
+
+        
+          
+        
+                       
+            <section class="form-section">
+                <h1 >AGREGAR PRODUCTO</h1>
+
+                <form data-form>
+                  <input type="text" id="productName" data-nombre placeholder="nombre"/>
+                  <input type="text" id="productPrice" data-precio placeholder="precio" />
+                  <input type="text" id="productImage" data-imagen placeholder="imagen" />
+                  <span  class="mensaje-error"> </span>
+                  <div class="buttons">
+                    <button type="submit" id="enviar"  class="submit">Enviar</button>
+                    <button type="reset" id="limpiar" class="clear">Limpiar</button>
+                  </div>
+                </form>
+              </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <h1>AluraGeek</h1>
+        <h2>Desarrollado por Jeraldin Caliz</h2>
+        <p>Alura Latam 2025</p>
     </footer>
+
+    <script type="module" src="./js/controllers/main.js"
+    <script type="module " src="./js/service/product-service.js"></script>
 </body>
 </html>
