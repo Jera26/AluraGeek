@@ -142,8 +142,8 @@ main{
   border-radius: 20px;
   width: 196px;
   background-color: #5D04D9;
-  min-height: 300px; /* Usa min-height en lugar de height */
-  display: flex; /* Flexbox para alinear contenido */
+  min-height: 300px; 
+  display: flex; 
   flex-direction: column;
   
   
@@ -161,11 +161,11 @@ main{
 .form-section {
   position: absolute; 
   top: 170px;
-  right: 30px; /* Pegado al borde derecho */
+  right: 30px; 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Ajusta el ancho según tu diseño */
+  width: 400px; 
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -209,9 +209,9 @@ form input {
 
 /* Botones */
 .buttons {
-  display: flex; /* Para centrar los botones */
+  display: flex; 
   justify-content: center;
-  gap: 10px; /* Espaciado entre botones */
+  gap: 10px; 
 }
 
 button {
@@ -304,7 +304,7 @@ button:hover {
     width: 100%; 
     height: auto; /* Ajusta la altura automáticamente */
     padding: 10px; /* Reducir padding */
-    box-shadow: none; /* Opcional: quitar sombras para un diseño más limpio */
+    box-shadow: none; 
   
   }
    
@@ -320,7 +320,7 @@ button:hover {
 
   .form-section {
     position: static; /* Posicionarlo como parte del flujo del documento */
-    width: 100%; /* Usar todo el ancho disponible */
+    width: 100%; 
     margin: 0 auto; /* Centrar el formulario */
     padding: 10px; /* Reducir el espacio interno */
   
