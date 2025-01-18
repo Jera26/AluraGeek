@@ -23,6 +23,8 @@ export function crearCard({ nombre, precio, imagen, id }) {
             </div>
           
   `;
+
+   eliminar(card,id);
   return card;
 }
 
@@ -60,29 +62,21 @@ form.addEventListener('submit', async (e) => {
 console.log('archivo cargado')
 
 
-const eliminarProdu = async (id) => {
-  try {
-    // Selecciona el contenedor del producto y lo elimina del DOM
-    const itemToDelete = document.querySelector(`[data-product='${id}']`);
-    if (itemToDelete) {
-      itemToDelete.remove(); // Elimina el producto del DOM
+function eliminar(card, id) {
+  const botonEliminar = card.querySelector('.delete-button');
+  
+  botonEliminar.addEventListener("click", async () => {
+    try {
+      // Llamada al servicio para eliminar el producto
+      await servicesProducts.eliminarProducto(id);
+      
+      // Elimina el elemento del DOM
+      card.remove();
+      
+      console.log(`Producto eliminado con ID: ${id}`);
+    } catch (error) {
+      // Manejo de errores
+      console.error(`No se pudo eliminar el producto con ID: ${id}`, error);
     }
-
-    // Llamar al servicio para eliminar el producto en el servidor
-    const productoEliminado = await servicesProducts.eliminarProducto(id);
-    
-    // Mostrar un mensaje al usuario de que el producto se eliminó correctamente
-    alert(`Producto eliminado correctamente: ${JSON.stringify(productoEliminado)}`);
-  } catch (error) {
-    console.error("Error al eliminar producto:", error);
-    alert("Ocurrió un error al intentar eliminar el producto.");
-  }
-};
-
-// Configurar el botón para eliminar el producto
-document.querySelectorAll('.delete-button').forEach(button => {
-  button.addEventListener('click', function() {
-    const id = this.getAttribute('data-id'); // Obtener el ID del producto
-    eliminarProducto(id); // Llamar a la función eliminarProducto
   });
-});
+}

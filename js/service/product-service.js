@@ -1,6 +1,10 @@
+const BASE_URL = 'https://6785d041f80b78923aa47d9f.mockapi.io/products';
+
+
+
 async function listarProducto() {
     try {
-        const conexion = await fetch("https://6785d041f80b78923aa47d9f.mockapi.io/products", {
+        const conexion = await fetch(BASE_URL, {
             method: "GET", // Configura el método GET correctamente
         });
 
@@ -13,7 +17,7 @@ async function listarProducto() {
 
     } catch (error) {
         console.error("Hubo un error al listar los productos:", error);
-        return []; // Retorna un array vacío en caso de error para evitar romper el flujo
+        return []; 
     }
 }
 
@@ -35,10 +39,10 @@ async function listarProducto() {
 
 const crearProducto = async (nombre, precio, imagen) => {
     try {
-      const response = await fetch('https://6785d041f80b78923aa47d9f.mockapi.io/products', {
+      const response = await fetch(BASE_URL, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json", // Encabezado corregido
+          "Content-Type": "application/json", 
         },
         body: JSON.stringify({ nombre, precio, imagen }), // Cuerpo de la solicitud
       });
@@ -51,32 +55,58 @@ const crearProducto = async (nombre, precio, imagen) => {
       return data;
     } catch (error) {
       console.error("Error al crear los productos:", error);
-      throw error; // Vuelve a lanzar el error para que sea manejado en el `catch` del formulario
+      throw error; 
     }
   };
   
-  const eliminarProducto = async (id) => {
+ /* const eliminarProducto = async (id) => {
     try {
-      const response = await fetch(`https://6785d041f80b78923aa47d9f.mockapi.io/products/${id}`, {
+      const response = await fetch(`${BASE_URL}/${id}`, { 
         method: "DELETE", // Método DELETE
         headers: {
-          "Content-Type": "application/json",
-        }
+          "Content-Type": "application/json", // Tipo de contenido
+        },
       });
   
       if (!response.ok) {
         throw new Error(`Error al borrar el producto: ${response.statusText}`);
       }
   
-      const data = await response.json()
-      return data;
-      } catch (error) {
-      console.log("Producto eliminado correctamente:", data);}}
+      const data = await response.json(); 
+      console.log("Producto eliminado correctamente:", data); 
+      return data; 
+    } catch (error) {
+      console.log("Error al eliminar el producto:", error.message); // Manejo de errores
+      throw error; 
+    }
+  };*/
+
+  const eliminarProducto = async (id) => {
+    try {
+        const response = await fetch(`${BASE_URL}/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error al borrar el producto: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log("Producto eliminado correctamente:", data);
+        return data;
+    } catch (error) {
+        console.log("Error al eliminar el producto:", error.message);
+        throw error;
+    }
+};
   
- 
 export const servicesProducts = {
     listarProducto,
     crearProducto,
     eliminarProducto,
+    
 
 };
