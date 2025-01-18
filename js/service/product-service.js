@@ -21,21 +21,7 @@ async function listarProducto() {
     }
 }
 
-/*const crearProducto =async(nombre ,precio,imagen)=>{
-    try{
-        const response =await fetch(conexion,{
-        method:"POST",
-        headers:{
-           'content-type':"application/json"
-        },
-        body: JSON.stringify({ nombre, precio,imagen})
-    })
-    const data =await response.json();
-    return data;
-    }catch(error){
-        console.log("error al crear los productos", error)
-    }
-}*/
+
 
 const crearProducto = async (nombre, precio, imagen) => {
     try {
@@ -59,27 +45,7 @@ const crearProducto = async (nombre, precio, imagen) => {
     }
   };
   
- /* const eliminarProducto = async (id) => {
-    try {
-      const response = await fetch(`${BASE_URL}/${id}`, { 
-        method: "DELETE", // Método DELETE
-        headers: {
-          "Content-Type": "application/json", // Tipo de contenido
-        },
-      });
-  
-      if (!response.ok) {
-        throw new Error(`Error al borrar el producto: ${response.statusText}`);
-      }
-  
-      const data = await response.json(); 
-      console.log("Producto eliminado correctamente:", data); 
-      return data; 
-    } catch (error) {
-      console.log("Error al eliminar el producto:", error.message); // Manejo de errores
-      throw error; 
-    }
-  };*/
+
 
   const eliminarProducto = async (id) => {
     try {
